@@ -2,6 +2,8 @@
 
 This project analyzes gene expression profiles from RNA-Seq data to identify differentially expressed genes in patients with Coronary Artery Disease (CAD) using R.
 
+<img width="960" height="86" alt="rna_seq_dac_project_flow" src="https://github.com/user-attachments/assets/2fc846fa-9f34-4273-979b-5c11786f9a9c" />
+
 ## Objective
 
 Perform a complete pipeline for RNA-Seq analysis:
