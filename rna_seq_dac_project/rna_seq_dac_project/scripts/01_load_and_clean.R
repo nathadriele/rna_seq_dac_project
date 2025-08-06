@@ -1,9 +1,3 @@
-# 01_load_and_clean.R
-# -------------------
-# Load count matrix and metadata
-# Clean and prepare for DESeq2 analysis
-
-# Load packages
 library(DESeq2)
 library(dplyr)
 library(readr)

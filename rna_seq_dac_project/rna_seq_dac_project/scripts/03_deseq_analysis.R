@@ -1,10 +1,7 @@
-# 03_deseq_analysis.R
-# -------------------
-# Differential expression analysis with DESeq2
-
 library(DESeq2)
 library(dplyr)
 library(readr)
+library(ggplot2)
 
 dds <- readRDS("data/processed/dds_clean.rds")
 
@@ -17,8 +14,6 @@ res_ordered <- res[order(res$padj), ]
 
 write_csv(as.data.frame(res_ordered), "results/deseq2_results.csv")
 saveRDS(res_ordered, "data/processed/deseq2_results.rds")
-
-library(ggplot2)
 
 res_df <- as.data.frame(res_ordered)
 res_df$gene <- rownames(res_ordered)

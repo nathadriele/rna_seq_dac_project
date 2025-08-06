@@ -1,7 +1,3 @@
-# 04_pathway_enrichment.R
-# ------------------------
-# Functional enrichment using clusterProfiler
-
 library(clusterProfiler)
 library(org.Hs.eg.db)
 library(dplyr)

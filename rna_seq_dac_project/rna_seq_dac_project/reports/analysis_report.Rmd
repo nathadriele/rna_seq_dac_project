@@ -1,0 +1,38 @@
+---
+title: "RNA-Seq Analysis Report - DAC"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Overview
+
+This report presents results of RNA-Seq analysis for patients with Coronary Artery Disease.
+
+## PCA Plot
+
+```{r pca}
+knitr::include_graphics("results/pca_plot.png")
+```
+
+## Heatmap
+
+```{r heatmap}
+knitr::include_graphics("results/heatmap_top30_genes.png")
+```
+
+## Volcano Plot
+
+```{r volcano}
+knitr::include_graphics("results/volcano_plot.png")
+```
+
+## GO Enrichment (Top 10 Terms)
+
+```{r go}
+library(readr)
+go <- read_csv("results/go_enrichment.csv")
+knitr::kable(head(go, 10))
+```
