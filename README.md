@@ -1,6 +1,6 @@
 # RNA-Seq Differential Expression Analysis in Coronary Artery Disease
 
-Este projeto analisa perfis de expressão gênica de dados de RNA-Seq para identificar genes diferencialmente expressos em pacientes com Doença Arterial Coronariana (DAC) usando R.
+Este projeto teste, analisa perfis de expressão gênica de dados de RNA-Seq para identificar genes diferencialmente expressos em pacientes com Doença Arterial Coronariana (DAC) usando R.
 
 <img width="960" height="86" alt="rna_seq_dac_project_flow" src="https://github.com/user-attachments/assets/2fc846fa-9f34-4273-979b-5c11786f9a9c" />
 
