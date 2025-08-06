@@ -1,20 +1,21 @@
 # RNA-Seq Differential Expression Analysis in Coronary Artery Disease
 
-This project analyzes gene expression profiles from RNA-Seq data to identify differentially expressed genes in patients with Coronary Artery Disease (CAD) using R.
+Este projeto analisa perfis de expressão gênica de dados de RNA-Seq para identificar genes diferencialmente expressos em pacientes com Doença Arterial Coronariana (DAC) usando R.
 
 <img width="960" height="86" alt="rna_seq_dac_project_flow" src="https://github.com/user-attachments/assets/2fc846fa-9f34-4273-979b-5c11786f9a9c" />
 
-## Objective
+## Objetivo
 
-Perform a complete pipeline for RNA-Seq analysis:
-- Data import and cleaning
-- Exploratory data analysis
-- Differential expression with DESeq2
-- Functional enrichment analysis (GO, KEGG)
-- Interactive visualization with Shiny
-- Automated reporting with RMarkdown
+Execute um pipeline completo para análise de RNA-Seq:
+- Importação e limpeza de dados
+- Análise exploratória de dados
+- Expressão diferencial com DESeq2
+- Análise de enriquecimento funcional (GO, KEGG)
+- Visualização interativa com Shiny
+- Relatórios automatizados com RMarkdown
 
-## Basic Structure
+## Estrutura Básica
+
 ```
 rna_seq_dac_project/
 │
@@ -39,21 +40,21 @@ rna_seq_dac_project/
 │
 ├── .gitignore
 ├── README.md
-└── renv.lock / renv/ (opcional)
+└── renv.lock / renv/
 ```
 
-## Project Structure
+## Estrutura do Projeto
 
 ```
-scripts/                 Core R scripts  
-data/raw/                Raw RNA-Seq count matrix and metadata  
-data/processed/          Cleaned data for modeling  
-results/                 Output from analysis  
-reports/                 Final reports (Rmd and HTML)  
-shiny_app/               Interactive dashboard  
+scripts/ scripts Core R
+dados/raw/ matriz de contagem bruta de RNA-Seq e metadados
+dados/processados/ dados limpos para modelagem
+resultados/ saída da análise
+relatórios/ relatórios finais (Rmd e HTML)
+shiny_app/ painel interativo
 ```
 
-## Required Packages
+## Pacotes necessários
 
 - DESeq2
 - BiocManager
@@ -63,6 +64,6 @@ shiny_app/               Interactive dashboard
 - shiny, flexdashboard
 - rmarkdown
 
-## Running
+## Execução
 
-Run scripts sequentially from `scripts/` or load as a pipeline.
+Execute scripts sequencialmente a partir de `scripts/` ou carregue como um pipeline.
