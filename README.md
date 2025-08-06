@@ -14,14 +14,44 @@ Perform a complete pipeline for RNA-Seq analysis:
 - Interactive visualization with Shiny
 - Automated reporting with RMarkdown
 
+## Basic Structure
+```
+rna_seq_dac_project/
+│
+├── data/
+│   ├── raw/
+│   └── processed/
+│
+├── scripts/
+│   ├── 01_load_and_clean.R
+│   ├── 02_eda_visualization.R
+│   ├── 03_deseq_analysis.R
+│   ├── 04_pathway_enrichment.R
+│   └── 05_generate_report.R
+│
+├── shiny_app/
+│   └── app.R
+│
+├── results/
+│
+├── reports/
+│   └── analysis_report.Rmd
+│
+├── .gitignore
+├── README.md
+└── renv.lock / renv/ (opcional)
+```
+
 ## Project Structure
 
+```
 scripts/                 Core R scripts  
 data/raw/                Raw RNA-Seq count matrix and metadata  
 data/processed/          Cleaned data for modeling  
 results/                 Output from analysis  
 reports/                 Final reports (Rmd and HTML)  
 shiny_app/               Interactive dashboard  
+```
 
 ## Required Packages
 
